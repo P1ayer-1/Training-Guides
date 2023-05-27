@@ -70,7 +70,8 @@ https://huggingface.co/datasets/entity/dataset_name
 
 ##### From the webpage
 Locate the clone repository button
-![[Pasted image 20230527145057.png]]
+![huggingface clone demo](https://github.com/P1ayer-1/Training-Guides/blob/main/hf_clone_demo.png?raw=true)
+
 
 
 move to the shared datasets directory
