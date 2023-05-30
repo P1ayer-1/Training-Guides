@@ -100,3 +100,26 @@ Set `dataset_name` as the path to your dataset in run_sing_deep.sh
 ```
 sbatch $HOME/training_scripts/train1bil_deep.sbatch
 ```
+
+### Multi Node
+
+#### Setup
+```
+cp $SCRATCH/training_templates/run_sing_deep_multi.sh  $HOME/training_scripts
+cp $SCRATCH/training_templates/train1bil_deep_multi.sbatch $HOME/training_scripts
+```
+
+Like single node training, these two scripts (run_sing_deep_multi.sh, train1bil_deep_multi.sbatch) along with the config file are what you should modify based on the your needs.
+
+to create a new training config, append your config details to this file
+```
+nano $SCRATCH/mdel_builds/MDEL/src/mdel/configs/config.yaml
+```
+
+Set desired number of nodes in the sbatch script `#SBATCH --nodes`
+
+
+#### Execute
+```
+sbatch $HOME/training_scripts/train1bil_deep_multi.sbatch
+```
