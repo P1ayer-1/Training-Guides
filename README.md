@@ -30,6 +30,8 @@ export SCRATCH=**realpath to scratch dir**
 export PROJECT_HOME=/pfs/lustrep4/projappl/project_462000259
 export PATH="$PROJECT_HOME/software/git-lfs-3.3.0/:$PATH"
 export LOG_DIR=**realpath to home dir + logs** # eg. /pfs/lustrep4/users/npersaud/logs/
+export SBATCH_OUTPUT=$LOG_DIR/%j_out.txt
+export SBATCH_ERROR=$LOG_DIR/%j_err.txt
 ```
 
 Next run this command 
