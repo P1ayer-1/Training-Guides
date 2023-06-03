@@ -105,8 +105,8 @@ sbatch $HOME/training_scripts/train1bil_deep.sbatch
 
 #### Setup
 ```
-cp $SCRATCH/training_templates/run_sing_deep_multi.sh  $HOME/training_scripts
-cp $SCRATCH/training_templates/train1bil_deep_multi.sbatch $HOME/training_scripts
+cp $SCRATCH/training_templates/run_sing_deep_multi.sh  $HOME/training_scripts/
+cp $SCRATCH/training_templates/train1bil_deep_multi.sbatch $HOME/training_scripts/
 ```
 
 Like single node training, these two scripts (run_sing_deep_multi.sh, train1bil_deep_multi.sbatch) along with the config file are what you should modify based on the your needs.
